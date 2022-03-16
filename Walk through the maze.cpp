@@ -4,12 +4,12 @@
 #define ROW 9
 #define COL 11
 char map[ROW][COL+1]={
-        {"*#*********"},
+                {"*#*********"},
 		{"***###*###*"},
 		{"###**#****#"},
 		{"*#**###**#*"},
 		{"***********"},
-        {"#####*##*##"},
+                {"#####*##*##"},
 		{"**#*****#*E"},
 		{"***#*###**#"},
 		{"*#*********"},
@@ -54,14 +54,14 @@ int main()
 		{
 			if((curX-1)>=0&&(map[curY][curX-1]=='*'||map[curY][curX-1]=='E')) curX--;
 		}
-		else if(t='d')
+		else if(t=='d')
 		{
-			if((curX+1)<COL&&(map[curY][curX+1]=='*'||map[curY][curX+1]=='E'))curX++;
+			if((curX+1)<COL&&(map[curY][curX+1]=='*'||map[curY][curX+1]=='E')) curX++;
 		}
 		if(map[curY][curX]=='E')
 		{   
 			printf("\n");
-		    printf("š§Ď˛ÄăłÉšŚÍ¨šŘŁĄ\t");
+		    printf("恭喜你成功通关！");
 			printf("\n");
 			break;
 		}
