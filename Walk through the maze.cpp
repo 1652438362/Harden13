@@ -50,11 +50,6 @@ int main()
 		{
 			if((curY+1)<ROW&&(map[curY+1][curX]=='*'||map[curY+1][curX]=='E')) curY++;
 		}
-		else if(t=='s')
-		{
-			if((curY+1)<ROW&&(map[curY+1][curX]=='*'||map[curY+1][curX]=='E')) curY++;
-			
-		}
 		else if(t=='a')
 		{
 			if((curX-1)>=0&&(map[curY][curX-1]=='*'||map[curY][curX-1]=='E')) curX--;
@@ -66,7 +61,7 @@ int main()
 		if(map[curY][curX]=='E')
 		{   
 			printf("\n");
-		    printf("��ϲ��ɹ�ͨ�أ�\t");
+		    printf("š§Ď˛ÄăłÉšŚÍ¨šŘŁĄ\t");
 			printf("\n");
 			break;
 		}
